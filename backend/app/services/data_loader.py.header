@@ -1,0 +1,15 @@
+import os
+import pandas as pd
+import numpy as np
+from typing import Optional
+
+# Navigate: data_loader.py -> services -> app -> backend -> FinanceAI root
+_THIS = os.path.abspath(__file__)
+_SERVICES = os.path.dirname(_THIS)
+_APP = os.path.dirname(_SERVICES)
+_BACKEND = os.path.dirname(_APP)
+_ROOT = os.path.dirname(_BACKEND)  # FinanceAI/
+
+STOCK_CSV = os.path.join(_ROOT, "data", "processed", "stock_features.csv")
+SENTIMENT_CSV = os.path.join(_ROOT, "data", "processed", "checkpoint.csv")
+
