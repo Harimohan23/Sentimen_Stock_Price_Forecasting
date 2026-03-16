@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE = 'http://localhost:8000/api'
+const BASE = 'https://sentimen-stock-price-forecasting.onrender.com/'
 const api = axios.create({ baseURL: BASE, timeout: 120000 })
 
 export const marketAPI = {
